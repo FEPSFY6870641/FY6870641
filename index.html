@@ -1,7 +1,160 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <h2>URN 6870641</h2>
-  </head>
+<head>
+    </head>
+     <img src = "WebBanner2024.png" alt = "Banner" width="1200" height="300">
+        <h1><b>ENG0018 Computer Laboratory 2024/25</b></h1>
+        <h2> Student URN: 6870641</h2>
+    <hr>
+    <h2 style="font-family: calibri;" ><b>Conference paper: Title</b></h2>
+    <hr>  
+</html>
+
+<! table of contents>
+<table>
+
+
+    <tr>
+        <th><h3>Table of Contents</h3></th>
+    </tr>
+    
+    <td><a href="#Abstract"> Abstract</td>
+    </tr>
+
+    </tr>
+    <td><a href="#Introduction"> Introduction</td>
+    </tr>
+
+    </tr>
+    <td><a href="#Analysis and discussion">Analysis and discussion</td>
+    </tr>
+
+    </tr>
+<td><a href="#Reference"> Reference</td>
+    </tr>
+
+
+</table>
+
+<!style for tables>
+    <style>
+    table{
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 30%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px
+        }
+
+    tr :nth-child(even){
+        background-color: #dddddd;
+
+    }
+
+    </style>
+
+<style>
+p.ex1{
+    margin-left: 250px;
+}
+</style>
+    </head>
+
+
+
+<meta name=" viewpoint" content=" width=device-width",inital-scale=1>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    .mySlides {display: none;}
+</style>
+<body style="background-color:#FFFFFF;margin-left:50px;"></body>
+
+
+<p id="date&time"></p>
+<script>
+//Javascript to display the date and time on my webpage
+const d = new Date();
+document.getElementById("date&time").innerHTML = d;
+</script>
+
+
+
+<h3> Introduction </h3>
+<p class="ex1">
+ <pre>
+    "Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
+intelligent machine through the interaction of an oracle with the machine system, over a sequence of
+learning epochs. A distinctive component in an active system is the querying strategy, used to sample
+candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
+to improve the classification model. Various strategies have been proposed including; Query by
+Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
+sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
+2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
+presented for labeling, to a machine (database) or human oracle that has knowledge of the class
+labels. After adding the newly labeled instances to the current training set, a revised model is
+subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
+learning at each epoch. The process is continued until some stopping criterion has been met, such as
+reaching a stage where information from the selected instances is contrary to the model, causing the
+classifier confidence to drop, as in Vlachos (2008)."
+ </pre>
+</p>
+
+<h3 id=”Analysis and discussion”>Analysis and discussion</h3>
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<title>Change Button Colour</title>
+<button id="colorButton">Click me to change colour</button>
+<script>
+    // Get a reference to the button element
+    var button = document.getElementById("colorButton");
+    // Function to change the button color
+    function changeColor() {
+    // Generate a random color (hexadecimal)
+    var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    // Set the button's background color to the random color
+    button.style.backgroundColor = randomColor;
+    }
+    // Add a click event listener to the button
+    button.addEventListener("click", changeColor);
+    </script>
+<head>
+    <title>My Daily Activities</title>
+    <!-- To acesss the chart library -->
+<script type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
+<div id="Chart_div "></div>
+
+function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+    [‘Task’, ‘Hours per Day’],
+    [‘Work’, 8],
+    [‘Sleep’, 8],
+    [‘Eat’, 2],
+    [‘Study’, 4],
+    [‘Exercise’, 2]
+]);
+var options = {
+    title: ‘My Daily Activities’
+};
+
+var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));
+chart.draw(data, options);
+}
+</script>
+
+
+
+</script>
+
+
+
+    </body>
 </html>
