@@ -82,8 +82,62 @@ const d = new Date();
 document.getElementById("date&time").innerHTML = d;
 </script>
 
+<div id= "last_updated">Loading Last update time...</div>
+
+<!-- Verify Button-->
+<button onclick ="verifyLastupdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+    verifyLastupdatedTime()
+</button>
+
+<script>
+    async function getLastUpdatedTime() {
+        const username = 'FEPSFY6870641'
+        const repo = "FY6870641"
+
+        const url = `https://api.github.com/repos/${username}/${repo}/commits`;
+        try {
+            const response = await fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/vnd.github.v3+json',
+                }
+            });
+            if (!response.ok) {
+                throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
+            }
+            const commits = await response.json();
+            if (commits && commits.length > 0) {
+                const lastCommitDate = new Date(commits[0].commit.committer.date);
+               
+                // Displaying the time on load
+                document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
+            } else {
+                document.getElementById('last-updated').innerText = 'No commits found in the repository.';
+            }
+        } catch (error) {
+            console.error('Error fetching the last updated time:', error);
+            document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
+        }
+    }
+    // Function to verify the last update time by re-fetching it from the API
+    async function verifyLastUpdatedTime() {
+        document.getElementById('last-updated').innerText = 'Verifying...';
+        await getLastUpdatedTime();
+        alert("Last modified time has been successfully verified from GitHub API.");
+    }
+    // Initial load to display the time on page load
+    window.onload = getLastUpdatedTime;
+</script>
+
+        
+        
+            
+        
+    
+</script>
 
 
+ 
 <h3> Introduction </h3>
 <p class="ex1">
  <pre>
@@ -100,7 +154,7 @@ labels. After adding the newly labeled instances to the current training set, a 
 subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
 learning at each epoch. The process is continued until some stopping criterion has been met, such as
 reaching a stage where information from the selected instances is contrary to the model, causing the
-classifier confidence to drop, as in Vlachos (2008). (SAMPLE TEXT)"
+classifier confidence to drop, as in Vlachos (2008)."
  </pre>
 </p>
 
@@ -157,4 +211,4 @@ chart.draw(data, options);
 
 
     </body>
-</html>
+    </html> 
