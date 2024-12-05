@@ -3,40 +3,70 @@
 
 <head>
     <meta name="viewpoint" content="width=device-width",inital-scale=1>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <img src = "WebBanner2024.png" alt = "Banner" width="1200" height="300">
     <h1><b>ENG0018 Computer Laboratory 2024/25</b></h1>
     <h2> Student URN: 6870641</h2>
     <hr>
-    <h2 style="font-family: calibri;" ><b>Conference paper: Title</b></h2>
+    <h2 style="font-family: calibri;" ><b>Conference paper: The Use of Artificial Intelligence in Employment</b></h2>
     <hr>  
+    <div class ="grid-container">
+        <div class ="GridItem1">
+        <table>
+            <tr>
+                <th><h3>Table of Contents</h3></th>
+            </tr>
 
-    <table>
-        <tr>
-            <th><h3>Table of Contents</h3></th>
-        </tr>
+            <tr>
+            <td><a href="#Abstract"> Abstract</td>
+            </tr>
 
-        <tr>
-        <td><a href="#Abstract"> Abstract</td>
-        </tr>
+            </tr>
+            <td><a href="#Introduction"> Introduction</td>
+            </tr>
 
-        </tr>
-        <td><a href="#Introduction"> Introduction</td>
-        </tr>
+            </tr>
+            <td><a href="#AI_In_Manufactoring_Text">AI in Manufacturing</td>
+            </tr>
 
-        </tr>
-        <td><a href="#Analysis and discussion">Analysis and discussion</td>
-        </tr>
 
-        <tr>
-        <td><a href="#Reference"> Reference</td>
-        </tr>
-    </table>
+            </tr>
+            <td><a href="#AI in the Car Industry">AI in the Car Industry</td>
+            </tr>
+
+            </tr>
+            <td><a href="#Ethics">Ethics</td>
+            </tr>
+
+            </tr>
+            <td><a href="#  AI in the workplace">  AI in the workplace</td>
+            </tr>
+            <tr>
+            <td><a href="#Reference"> Reference</td>
+            </tr>
+
+
+            
+        </table>
+    
+        </div>
+        <video class ="GridItem2" scr="Presentation.mp4" width ="600" height ="390" controls>
+        </video>
+        
+    </div>
+
+ 
 
 
 <!-- <!style for tables> -->
 
     <style>
+        * {
+            font-family:'Calibri';
+            font-size: 20px ;
+    
+        
+        }
         table {
             font-family: 'arial', 'sans-serif';
             border-collapse: collapse;
@@ -62,9 +92,68 @@
 
         p.ex1 {
             margin-left: 250px;
+            text-align: justify;
+            text-justify: inter-word;
+
         }
 
         .mySlides {display: none;}
+
+        .Figure_Reference{
+        font-size: 0.7em;
+        text-align: center;
+        display: block;
+        margin-top: 5px;
+        }
+
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0;
+            width: 50%;
+        }
+
+        .text{
+            text-align: justify;
+        
+
+
+
+        }
+        
+        #figure1{
+            width: 60%;
+            margin-left: 250px;
+            margin-bottom: 0;
+        
+        }
+        
+        .grid-container{
+            display:flex;
+           
+            
+        }
+        .GridItem1 {
+            width:100%;
+            
+
+
+        }
+
+        .GridItem1, .GridItem1{
+            display: flex;
+
+        }
+
+
+    
+    
+            
+        
+        
+
+
     </style>
 </head>
  
@@ -74,8 +163,8 @@
     <!-- ////////////////////////////// Word count function ////////////////////////////// -->
     <!-- //////////////////////////////////////////////////////////////////////////////// -->
     <!-- Placeholder for total word count -->
-    <p id="totalWordCount"></p>
     <hr>
+    <p id="totalWordCount"></p>
     <script>
     // Function to calculate and display word count for a specified section
     function displayWordCount(sectionId, outputId) {
@@ -92,9 +181,14 @@
     function displayTotalWordCount() {
         // Calculate word count for each section and accumulate the total
         const IntroductionCount = displayWordCount("Introduction_Text");
-        const AnalysisCount = displayWordCount("Analysis_Text");
+        const AI_In_Manufactoring_TextCount = displayWordCount("AI_In_Manufactoring_Text");
+        const AI_in_the_Car_IndustryCount = displayWordCount("AI in the Car Industry");
+        const EthicsCount = displayWordCount("Ethics");
+        const AI_in_the_workplaceCount = displayWordCount("AI in the workplace");
+        const ConclusionCount = displayWordCount("Conclusion");
+
         // Calculate the sum of all selected sections
-        const totalWordCount = IntroductionCount + AnalysisCount;
+        const totalWordCount = IntroductionCount + AI_In_Manufactoring_TextCount + AI_in_the_Car_IndustryCount + EthicsCount + AI_in_the_workplaceCount + ConclusionCount ;
         // Display the total word count
         document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
     }
@@ -150,53 +244,300 @@
     }
     // Initial load to display the time on page load
     window.onload = getLastUpdatedTime;
-
              
     </script>
+
+
+
+
+
+
+<div id ="Abstract_Text">
+    <h3 id = "Abstract">    Abstract </h3>
+    <p class="ex1">
+    <pre>
+
+    What is Artificial Intelligence? "Artificial Intelligence (AI) - a term that was first used in 1956 by computer scientist 
+    John McCarthy during a conference to discuss if machines could be made intelligent" <a href="#Bruun, E.P & Duka, A (2018)">(Rossi, 2016) cited in (Brunn, E.P. 
+    & Duka, A. 2018).</a> In short, it's a type of technology that facilitates computers and machinery, which replicates human
+    knowledge and does various activities such as problem solving, decision making and autonomy. In this article I will be
+    portraying the uses of artificial intelligence in the workplace. By going in-depth on where it is already being used, 
+    the benefits to businesses of using this piece of technology and on how is it useful for employment and managing workload. 
+
+
+
+    </pre>
+    </p>
+</div>
+
 
     <div id ="Introduction_Text">
         <h3 id = "Introduction"> Introduction </h3>
         <p class="ex1">
         <pre>
-        "Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-        intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-        learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-        candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-        to improve the classification model. Various strategies have been proposed including; Query by
-        Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-        sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-        2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-        presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-        labels. After adding the newly labeled instances to the current training set, a revised model is
-        subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-        learning at each epoch. The process is continued until some stopping criterion has been met, such as
-        reaching a stage where information from the selected instances is contrary to the model, causing the
-        classifier confidence to drop, as in Vlachos (2008)."
+            As the world is developing and coming into a new era of technological advancement, we have seen a huge rise in the use
+            of robotics with Artificial Intelligence (AI). From chat bots that businesses use to help guide their customers to AI 
+            in self-driving cars, this is a revolutionary piece of technology. 
+
         </pre>
         </p>
     </div>
 
-    <div id="Analysis_InText">
-        <h3 id=”Analysis”>Analysis and discussion</h3>   
+    <div id="AI_In_Manufactoring_Text" class="text">
+        <h3 id="AI_In_Manufactoring_Text">AI in Manufactoring</h3>   
+        <p class="ex1">
+        <pre>
+
+        <img src="figure 1.png" alt="Figure 1" class="center" id = "figure1">
+        <a href="#ABB (2023)"><span class = "Figure_Reference"> Figure 1: Smart Robotic automation solution from ABB to support sustainably targets for Volvo Cars (ABB, 2023) </span></a>
+        
+
+        AI has been a rapidly progressing phenomenon. An example of this is AI being used in robots to do tedious task in the manufacturing
+        industry. Figure 1, shows that robots using AI are able to perform tasks such as welding, assembling products and packaging with 
+        greater accuracy and efficiency than humans <a href ="#Marr, BM(2024)">(Marr, 2024)</a>. This enables manufacturing companies to be cost effective as less mistakes
+        are likely to occur. Moreover, the robots can work without any breaks <a href ="#WIRED (No date)">(WIRED, No Date)</a>. This allows the business to reduce costs in
+        the long-term as they don't need to be paid wages, this permits them to increase production to meet customer demand. A study from 
+        "MIT Technology Review Insights" took a survey of 300 manufactures that have begun working with AI. "64% are currently beginning to
+        implement and are trying it out". Alternatively, "35% have put AI to use in their production". Respondents from this survey said 
+        they would be boosting funding in AI in the foreseeable future <a href = "#MIT Technology Review Insights (2024)">(MIT Technology Review Insights, 2024).</a>
+        
+        </pre>
+        </p>
+    </div>
+ 
+
+    <div id="AI in the Car Industry" class="text">
+        <h3 id="AI in the Car Industry ">AI in the Car Industry </h3>   
+        <p class="ex1">
+        <pre>
+        <a href ="#Euro NCAP (2018)"><img src="Picture 2.png" alt="Figure 1" class="center">
+        <span class = "Figure_Reference">Figure 2: Euro NCAP | Lane Assist (2018)</span></a>
+
+        Another industry that has seen a huge shift into AI is the car industry. Modern cars are packed full of technology. Figure 2, shows
+        "Lane Assist", which makes sure the driver doesn't waver onto another lane, by scanning the road ahead and detecting the white lines 
+        <a href ="#Euro NCAP (2018)">(Euro NCAP, 2018)</a>. Another feature is Adaptive cruise control, which uses radar technology to keep you a safe distance from the car 
+        in front of you and being able to park by itself <a href = "#RAC(2018)">(RAC, 2018)</a>.The rapid use of AI in these systems will eventually lower the cost of producing
+        these pieces of technology, making it accessible for more people <a href ="#Loureiro, S. M. C. et al (2021)">(Ivanov & Webster, 2019) cited in (Loureiro, S. M. C. et al, 2021)</a>.
+        In recent years we have seen an increase of robot taxis being developed. These cars are programmed to operate in total autonomy. <a href = "#BBC(2024)">(BBC, 2024)</a>.
+        There is a lot of data that AI needs to process and interpret such as cars, people, speed limit and obstacles in the road gathered from sensors
+        called lidar and radar. The cameras around the vehicle can recognise and react to different obstructions in the surrounding environment, be
+        able to take decisions on how to navigate and respond to different situations autonomously. <a href ="#Intra Journal Newsroom (2023)">(Infra Journal Newsroom, 2023)</a>
+    
+        </pre>
+        </p>
+    </div>
+
+
+    <div id ="Ethics">
+        <h3 id = "Ethics">Ethics</h3>
+        <p class="ex1">
+        <pre>
+        One of the ethical considerations of robot taxis is that it will soon replace the jobs of the taxi drivers. <a href ="#Singh Dang, SSD (2022)">(Singh Dang, 2022)</a>. This can be
+        concerning as their jobs could no longer exist in the future. This uncertainty can make drivers stress whilst working; this can reduce motivation, 
+        hence causing less productivity. Moreover, it causes a shortage of taxi drivers as they may plan ahead and change their careers. This can be seen 
+        in the manufacturing industry. A lot of production is now being automated due the cost and quality reasons. Artificial intelligence algorithms are 
+        being used in quality control, where they are constantly monitoring and finding defects. Therefore, jobs involved in quality control may be replaced 
+        by robots due to efficiency. However, by utilising automation in factories it has enhanced workplace safety by giving robots more dangerous aspects 
+        of the job. <a href ="#Finio, MF, Downie, AD (2024)">(Finio, Downie, 2024)</a>
+
+        </pre>
+        </p>
+    </div>
+
+    <div id ="AI in the workplace">
+        <h3 id = "AI in the workplace">AI in the workplace</h3>
+        <p class="ex1">
+        <pre>
+        The use of Artificial Intelligence can be seen as a tool, which helps employees to become more productive and not as something that will replace 
+        jobs entirely. A great example of this is the use of AI in radiology <a href ="#The Economist (2018)">(The Economist, 2018)</a> .It can use deep learning to analyse areas of scans 
+        and recognise traces - that humans were not able to identify. This can make diagnosis quicker and less expensive, which could save a patient's 
+        life. This is especially important as radiology is costly and with these tools the prices will come down therefore, making it more accessible 
+        for people. <a href ="#The Economist (2018)">(The Economist, 2018)</a>
+
+        The use of artificial intelligence has created more job opportunities especially in the IT sector. Particularly in areas of development and creation.
+        Moreover, there has been an increased demand in machine learning, engineers, data scientists that enable AI to work effectively. "By 2025 AI is 
+        projected to create 97 million new job roles". <a href="#Gregg, IG (2024)">(Gregg, 2024)</a>.  The use of AI means that more jobs will arise in cyber security and ethics. This
+        is because as AI learns more information users need to make sure that AI is following moral, social and ethical values. AI is also opening new 
+        opportunities in different sectors. For example, Entrepreneurship in the business sector. It grants people to help start e-commerce businesses
+        by using AI powered platforms, this allows them to reach customers across the globe. <a href ="#Iacoviello, MI (2023)">(Iacoviello, 2023)</a>
+
+        </pre>
+    </p>
+    </div>
+    
+
+        <div id ="Conclusion">
+            <h3 id = "Conclusion">Conclusion</h3>
+            <p class="ex1">
+            <pre>
+            In summary, the use of AI has replaced some jobs such as in manufacturing. <a href ="#Marr, BM(2024)">(Marr, 2024)</a>. But, overall the use of AI has supported many people 
+            to work more efficiently in the workplace helping them to reduce the workload. For example, some areas of certain jobs can be dangerous or time
+            consuming. If this is left for AI to do it will mean that employees will have more time to focus on other important aspects of work, such as 
+            ensuring customer satisfaction and products being sent on the correct time. Consequently, facilitating workers to have more available time, 
+            leading to increased innovation that can help businesses grow and generate more jobs. Furthermore, it has enabled more job opportunities in 
+            the IT sector and encourages more entrepreneurship, which again leads to more jobs roles. <a href ="#Iacoviello, MI (2023)">(Iacoviello, 2023)</a>.
+    
+            </pre>
+            </p>
+        </div>
+            
+
+
+
+    <div id ="Reference">
+        <h3 id = "Reference"> Reference </h3>
         <p>
         <pre>
-        "Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-        intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-        learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-        candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-        to improve the classification model. Various strategies have been proposed including; Query by
-        Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-        sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-        2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-        presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-        labels. After adding the newly labeled instances to the current training set, a revised model is
-        subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-        learning at each epoch. The process is continued until some stopping criterion has been met, such as
-        reaching a stage where information from the selected instances is contrary to the model, causing the
-        classifier confidence to drop, as in Vlachos (2008)."
+            
+<h3 id = "Bruun, E.P & Duka, A (2018)"> Bruun, E.P & Duka, A (2018) <i> Artificial Intelligence, Jobs, and the Future of Work: Racing with the Machines. Basic Income Studies, 13(2). </i>
+Available at:<a href= "https://www.proquest.com/docview/2221824111/fulltextPDF/6262E68063834E4EPQ/:1?accountid=17256&parentSessionId
+=CdgQ4VmsB3FQOha3bNFayWnLE7yIYm12J%2FK%2B6QLykbE%3D&sourcetype=Scholarly%20Journals" target ="_blank">https://www.proquest.com/docview/2221824111/fulltextPDF/6262E68063834E4EPQ/1?accountid=17256&parentSessionId
+=CdgQ4VmsB3FQOha3bNFayWnLE7yIYm12J%2FK%2B6QLykbE%3D&sourcetype=Scholarly%20Journals</a>
+ (Accessed 30 November 2024).</h3>
+
+<h3 id = "ABB (2023)">ABB (2023)<i> Smart Robotic automation solution from ABB to support sustainably targets for Volvo Cars. </i>
+Available at:<a href="https://new.abb.com/news/detail/110881/smart-robotic-automation-solutions-from-abb-to-support-sustainability-
+targets-for-volvo-cars" target ="_blank">: https://new.abb.com/news/detail/110881/smart-robotic-automation-solutions-from-abb-to-support-sustainability-targets-for-volvo-cars</a> 
+(Accessed 30 November 2024).</h3>
+
+<h3 id = "Marr, BM(2024)">Marr, BM(2024) <i> What Job will AI Replace First? </i>
+Available at:<a href="https://www.forbes.com/sites/bernardmarr/2024/06/17/what-jobs-will-ai-replace-first/" target ="_blank"> https://www.forbes.com/sites/bernardmarr/2024/06/17/what-jobs-will-ai-replace-first/ </a> 
+(Accessed 30 November 2024).</h3>
+
+
+<h3 id = "Intra Journal Newsroom (2023)"> Intra Journal Newsroom (2023) <i> The Robotaxi goes on the road and the competition is open.</i>
+Available at:<a href="https://www.infrajournal.com/en/w/robotaxi-how-works#:~:text=Here%20comes%20robotaxis%2C%20the%20latest,taxi%2C%20but%20without
+%20a%20driver." target ="_blank">https://www.infrajournal.com/en/w/robotaxi-how-works#:~:text=Here%20comes%20robotaxis%2C
+%20the%20latest,taxi%2C%20but%20without%20a%20driver. </a> 
+(Accessed 29 October 2024).</h3>
+
+
+<h3 id = "MIT Technology Review Insights (2024)"> MIT Technology Review Insights (2024)  <i> Taking AI to the next level in manufacturing.  </i>
+Available at:<a href="https://www.technologyreview.com/2024/04/09/1090880/taking-ai-to-the-next-level-in-manufacturing/" target ="_blank">https://www.technologyreview.com/2024/04/09/1090880/taking-ai-to-the-next-level-in-manufacturing/ </a> 
+(Accessed 30 November 2024).</h3>
+
+<h3 id = "Euro NCAP (2018)"> Euro NCAP (2018) <i> Lane Support. </i>
+Available at:<a href="https://www.euroncap.com/en/car-safety/the-ratings-explained/safety-assist/lane-support/" target ="_blank">https://www.euroncap.com/en/car-safety/the-ratings-explained/safety-assist/lane-support/</a> 
+(Accessed 29 October 2024).</h3>
+
+<h3 id = "RAC(2018)"> RAC(2018)<i> A guide to adaptive cruise control - how it works and why you should be using it.  </i>
+Available at:<a href="https://www.rac.co.uk/drive/advice/how-to/a-guide-to-adaptive-cruise-control/" target ="_blank">https://www.rac.co.uk/drive/advice/how-to/a-guide-to-adaptive-cruise-control/</a> 
+(Accessed 30 November 2024).</h3>
+
+<h3 id = "Loureiro, S. M. C. et al (2021)"> Loureiro, S. M. C. et al (2021) <i> Artificial intelligence in business: State of the art and future research agenda. Journal of Business Research. [online].  </i>
+Available at:<a href="https://www-sciencedirect-com.surrey.idm.oclc.org/science/article/pii/S0148296320307451" target ="_blank">https://www-sciencedirect-com.surrey.idm.oclc.org/science/article/pii/S0148296320307451 </a> 
+(Accessed 30 November 2024).</h3>
+
+<h3 id = "BBC(2024)"> BBC(2024) <i> Robotaxis: Driverless cars arriving in US cities. </i>
+Available at:<a href="https://www.bbc.co.uk/newsround/68777656" target ="_blank">https://www.bbc.co.uk/newsround/68777656</a> 
+(Accessed 30 November 2024).</h3>
+
+<h3 id = "Singh Dang, SSD (2022)"> Singh Dang, SSD (2022) <i>How Artificial Intelligence Is Driving Robotaxis From Science Fiction to Reality.</i>
+Available at:<a href="https://www.forbes.com/sites/sanjitsinghdang/2022/12/27/how-artificial-intelligence-is-driving-robotaxis-from-science-fiction-to-reality/" target ="_blank">https://www.forbes.com/sites/sanjitsinghdang/2022/12/27/how-artificial-intelligence-is-driving-robotaxis-from-science-fiction-to-reality/</a> 
+(Accessed 29 October 2024).</h3>
+
+<h3 id = "WIRED (No date)"> WIRED (No date) <i> How artificial intelligence can radically transform your business. </i>
+Available at:<a href="https://www.wired.com/sponsored/story/how-artificial-intelligence-can-radically-transform-your-business/" target ="_blank">https://www.wired.com/sponsored/story/how-artificial-intelligence-can-radically-transform-your-business/</a> 
+(Accessed 30 November 2024).</h3>
+
+
+<h3 id = "The Economist (2018)"> The Economist (2018)  <i> AI, radiology and the future of work. </i>
+Available at:<a href="https://www.economist.com/leaders/2018/06/07/ai-radiology-and-the-future-of-work?utm_medium=cpc.adword.
+pd&utm_source=google&ppccampaignID=18156330227&ppcadID=&utm_campaign=a.22brand_pmax&utm_content=conversion.direct-response.anonymous&gad_
+source=1&gbraid=0AAAAADf4AbYNV4YDmfj-qJCY8J6XQ120k&gclid=EAIaIQobChMIwfSsz8-siQMVZopQBh0qswNgEAAYAiAAEgIMm_D_BwE&gclsrc=aw.ds" target ="_blank">: https://www.economist.com/leaders/2018/06/07/ai-radiology-and-the-future-of-work?utm_medium=cpc.adword.pd&utm_source=google&ppccampaignID=18156330227&ppcadID=&utm_campaign=
+a.22brand_pmax&utm_content=conversion.direct-response.anonymous&gad_source=1&gbraid=0AAAAADf4AbYNV4YDmfj-qJCY8J6XQ120k&gclid=EAIaIQobChMIwfSsz8-siQMVZopQBh0qswNgEAAYAiAAEgIMm_D_BwE&gclsrc=aw.ds</a> 
+(Accessed 30 November 2024).</h3>
+
+<h3 id = "Finio, MF, Downie, AD (2024)"> Finio, MF, Downie, AD (2024) <i> How is AI being used in manufacturing. </i>
+Available at:<a href="https://www.ibm.com/think/topics/ai-in-manufacturing#:~:text=AI%20optimizes%20supply%20chains%20by,resource%20shortages%20in%20real%2Dtime" target ="_blank">https://www.ibm.com/think/topics/ai-in-manufacturing#:~:text=AI%20optimizes%20supply%20chains%20by,resource%20shortages%20in%20real%2Dtime</a> 
+(Accessed 30 November 2024).</h3>
+
+<h3 id = "Iacoviello, MI (2023)">Iacoviello, MI (2023) <i> How Does Artificial Intelligence Create New Jobs? </i>
+Available at:<a href="https://www.forbes.com/councils/forbesbusinesscouncil/2023/07/26/how-does-artificial-intelligence-create-new-jobs/" target ="_blank">https://www.forbes.com/councils/forbesbusinesscouncil/2023/07/26/how-does-artificial-intelligence-create-new-jobs/</a> 
+(Accessed 30 November 2024).</h3>
+
+
+<h3 id = "Gregg, IG (2024)"> Gregg, IG (2024) <i> The Future Of Work: Embracing AI's Job Creation Potential. </i>
+Available at:<a href="https://www.forbes.com/councils/forbestechcouncil/2024/03/12/the-future-of-work-embracing-ais-job-creation-potential/ " target ="_blank">https://www.forbes.com/councils/forbestechcouncil/2024/03/12/the-future-of-work-embracing-ais-job-creation-potential/ </a> 
+(Accessed 30 November 2024).</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+   
         </pre>
         </p>
     </div>
 
 </body>
 </html>
+
+/* <!-- <title>Change Button Colour</title>
+<button id="colorButton">Click me to change colour</button>
+<script>
+    // Get a reference to the button element
+    var button = document.getElementById("colorButton");
+    // Function to change the button color
+    function changeColor() {
+    // Generate a random color (hexadecimal)
+    var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    // Set the button's background color to the random color
+    button.style.backgroundColor = randomColor;
+    }
+    // Add a click event listener to the button
+    button.addEventListener("click", changeColor);
+    </script>
+<head>
+    <title>My Daily Activities</title>
+     To acesss the chart library -->
+<!-- <script type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
+<div id="Chart_div "></div> --> 
+
+
+<!-- function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+    [‘Task’, ‘Hours per Day’],
+    [‘Work’, 8],
+    [‘Sleep’, 8],
+    [‘Eat’, 2],
+    [‘Study’, 4],
+    [‘Exercise’, 2]
+]);
+var options = {
+    title: ‘My Daily Activities’
+};
+
+var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));
+chart.draw(data, options); -->
+
+<!-- </script>
+
+
+
+</script>
+
+
+
+    </body>
+    </html>  --> */
